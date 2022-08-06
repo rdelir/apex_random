@@ -11,12 +11,12 @@ def legend():
     return "Your Legend is", starting_legend
 
 def primary():
-    first_weapon = random.choice(weapons)
+    first_weapon = weapons.pop(weapons.index(random.choice(weapons)))
     #primary_attachment= random.choice(attachments)
     return ("Your Primary Weapon is", first_weapon)
 
 def secondary():
-    second_weapon = random.choice(weapons)
+    second_weapon = weapons.pop(weapons.index(random.choice(weapons)))
     #secondary_atachment= random.choice(attachments)
     return("Your Secondary Weapon is", second_weapon)
     
