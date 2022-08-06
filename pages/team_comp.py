@@ -2,7 +2,7 @@ import random
 
 legends = ['Ash', 'Bangalore', 'Bloodhound', 'Caustic', 
            'Crypto', 'Fuse', 'Gibraltar', 'Horizon', 
-           'Lifeline', 'Loba', 'Maggie', 'Mirage', 
+           'Lifeline', 'Loba', 'Maggie', 'Mirage', 'Newcastle', 
            'Octane', 'Pathfinder', 'Rampart', 'Revenant', 
            'Seer', 'Valkyrie', 'Wattson', 'Wraith']
 
