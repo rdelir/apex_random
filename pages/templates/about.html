@@ -1,0 +1,30 @@
+<!-- pages/templates/about.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="callout large primary">
+    <div class="row column text-center">
+      <h1>Team Comp</h1>
+      <h4 class="subheader">Want to try someone new? Give it a go!! </h4>
+    </div>
+  </div>
+
+<!--Button that triggers python logic -->
+<div class="row column text-center">
+    <ul class="list-group-item list-group-item-light">
+        <h4 class="stat-title "> This Game... </h4>
+
+        <form class="stat -title">
+            <button id="stat-btn" class="btn">{{playstation}}</button>
+        </form>
+        <br>
+            <form class="stat -title">
+                <button id="stat-btn" class="btn">{{xbox}}</button>
+            </form>
+            <br>
+                <form class="stat -title">
+                    <button id="stat-btn" class="btn">{{pc}}</button>
+                </form>
+                <br>
+    </ul>
+{% endblock content %}

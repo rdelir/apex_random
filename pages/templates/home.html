@@ -1,0 +1,35 @@
+<!-- pages/templates/home.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="callout large primary">
+    <div class="row column text-center">
+      <h1>Apex Random</h1>
+      <h4 class="subheader">After constantly running the same character and weapon loadout its nice to make a change. Challenge yourself to something new and use a loadout that you would otherwise not have used if not for this randomizer!!</h4>
+    </div>
+  </div>
+
+<!--Button that triggers python logic -->
+<div class="row column text-center">
+    <ul class="list-group-item list-group-item-light">
+        <h4 class="stat-title "> This Game... </h4>
+
+        <form class="stat -title">
+            <button id="stat-btn" class="btn">{{legend}}</button>
+        </form>
+        <br>
+            <form class="stat -title">
+                <button id="stat-btn" class="btn">{{primary}}</button>
+            </form>
+            <br>
+                <form class="stat -title">
+                    <button id="stat-btn" class="btn">{{secondary}}</button>
+                </form>
+                <br>
+                    <form class="stat -title">
+                        <button id="stat-btn" class="btn">{{drop}}</button>
+                    </form>
+                    <br>
+    </ul>
+{% endblock content %}

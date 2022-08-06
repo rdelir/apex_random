@@ -6,18 +6,20 @@ weapons = ['R-310','R-99','Alternator','RE-45','P2020','Rampage','Flatline', 'He
 care_package = ['Volt', 'Spitfire', 'G7', 'Kraber', 'Nothing', 'Anything']
 #attachments = []
 
+def legend():
+    starting_legend = random.choice(legends)
+    return "Your Legend is", starting_legend
 
-starting_legend = random.choice(legends)
-print("Your Legend is", starting_legend)
+def primary():
+    first_weapon = weapons.pop(weapons.index(random.choice(weapons)))
+    #primary_attachment= random.choice(attachments)
+    return("Your Primary Weapon is", first_weapon)
 
-first_weapon = weapons.pop(weapons.index(random.choice(weapons)))
-print("Your Primary Weapon is", first_weapon)
-#primary_attachment= random.choice(attachments)
-
-
-second_weapon = weapons.pop(weapons.index(random.choice(weapons)))
-print("Your Secondary Weapon is", second_weapon)
-#secondary_atachment= random.choice(attachments)
-
-extra = random.choice(care_package)
-print("If you find a Care Package you can get", extra)
+def secondary():
+    second_weapon = weapons.pop(weapons.index(random.choice(weapons)))
+    #secondary_atachment= random.choice(attachments)
+    return("Your Secondary Weapon is", second_weapon)
+    
+def drop():
+    extra = random.choice(care_package)
+    return("Care Package gives", extra)
